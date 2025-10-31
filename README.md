@@ -13,11 +13,6 @@
 - **Pitch Deck:** [View on Canva](https://www.canva.com/design/DAG3MqV19Lo/8k4qNlvMrjcGshvr6sMyzg/edit?utm_content=DAG3MqV19Lo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - **Demo Video:** [Watch on YouTube](https://www.youtube.com/watch?v=_TT9YZo9st0)
 
-### GitHub Collaborator Access
-- **Invite hackathon judges to collaborate:**  
-  - Email: Hackathon@hashgraph-association.com
-  - Add as collaborator to ensure proper access for AI-assisted judging system
-
 ---
 
 ## Overview
