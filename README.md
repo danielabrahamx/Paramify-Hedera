@@ -28,13 +28,13 @@ Paramify demonstrates the viability of decentralized parametric insurance on Hed
 ### Why Hedera?
 
 **Hedera Consensus Service & Smart Contracts (HCS + HEV):**  
-We chose Hedera's EVM-compatible smart contracts layer combined with the Consensus Service for its predictable **$0.0001 per transaction** fee and **ABFT finality**. This guarantees operational cost stability essential for parametric insurance platforms serving communities in Africa and other regions with thin margins. Traditional blockchain platforms (e.g., Ethereum) charge volatile gas fees that can fluctuate 10-100x, making financial projections impossible for insurance providers. Hedera's deterministic pricing allows us to build sustainable business models where insurance premiums can be reliably calculated and users experience predictable transaction costs.
+We chose Hedera's EVM-compatible smart contracts layer combined with the Consensus Service for its predictable transaction fee and **ABFT finality**. This guarantees operational cost stability essential for parametric insurance platforms serving communities in Africa and other regions with thin margins. Traditional blockchain platforms (e.g., Ethereum) charge volatile gas fees that can fluctuate 10-100x, making financial projections impossible for insurance providers. Hedera's deterministic pricing allows us to build sustainable business models where insurance premiums can be reliably calculated and users experience predictable transaction costs.
 
 **Transaction Types Executed:**
-- **Smart Contract Deployment**: Creation of `Paramify.sol` on Hedera EVM (1 transaction, $0.0001)
-- **Policy Purchases**: Users call `buyInsurance()` to create flood insurance policies (1 transaction per policy, $0.0001)
-- **Payout Triggering**: Call `checkAndPayout()` when flood levels exceed threshold (1 transaction per payout, $0.0001)
-- **Oracle Updates**: Backend calls contract's payout function to update flood levels via oracle role (periodic, $0.0001 per update)
+- **Smart Contract Deployment**: Creation of `Paramify.sol` on Hedera EVM 
+- **Policy Purchases**: Users call `buyInsurance()` to create flood insurance policies 
+- **Payout Triggering**: Call `checkAndPayout()` when flood levels exceed threshold
+- **Oracle Updates**: Backend calls contract's payout function to update flood levels via oracle role 
 - **Admin Operations**: Role-based setters for thresholds and contract parameters (minimal, on-demand)
 
 **Economic Justification:**  
@@ -79,8 +79,8 @@ In regions with limited capital (e.g., small farmers in East Africa managing flo
 
 ```bash
 # 1. Clone and install
-git clone https://github.com/danielabrahamx/paramify.git
-cd paramify
+git clone https://github.com/danielabrahamx/paramify-hedera.git
+cd paramify-hedera
 npm install
 
 # 2. Configure environment
@@ -250,16 +250,11 @@ HEDERA_OPERATOR_KEY=your_operator_key_here
 
 To verify the deployment and test the system:
 
-1. **Testnet HBAR Account**:
-   - Account ID: [PLACEHOLDER: INSERT IN SUBMISSION NOTES]
-   - Private Key: [PLACEHOLDER: INSERT IN SUBMISSION NOTES ONLY - NOT IN GITHUB]
-   - *(Credentials provided securely in DoraHacks submission text field for verification)*
-
-2. **Contract Addresses** (on Hedera Testnet):
+1. **Contract Addresses** (on Hedera Testnet):
    - Paramify: `0x8588fF70697EE423f8aF94Dc2CB33068406A6729`
    - Mock Oracle: `0x1e2cF257676561e2088Abc3777bc1f011b450013`
 
-3. **To Test**:
+2. **To Test**:
    ```bash
    # 1. Import credentials into MetaMask on Hedera Testnet
    # 2. Visit http://localhost:8080
